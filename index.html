@@ -1,12 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First HTML Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Webpage</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2563eb, #60a5fa);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero span {
+            color: #e0f2fe;
+        }
+
+        .hero p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #2563eb;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #e0f2fe;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px;
+            text-align: center;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .light {
+            background-color: #ffffff;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: #f1f5f9;
+            padding: 20px 40px;
+            border-radius: 15px;
+            font-weight: 500;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Project */
+        .project {
+            max-width: 600px;
+            margin: auto;
+            background: #f1f5f9;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header {
+                padding: 20px 30px;
+            }
+
+            section {
+                padding: 60px 30px;
+            }
+
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hello World</h1>
-    <p>This is my first HTML page.</p>
+<header>
+    <h1>Mitali</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm <span>Mitali Sabale</span></h2>
+    <p>Data Analyst | Python • SQL • Power BI</p>
+    <button>Download Resume</button>
+</section>
+
+<section id="about">
+    <h3>About Me</h3>
+    <p>
+        Detail-oriented Data Analyst with strong analytical skills and experience in
+        data cleaning, visualization, and extracting meaningful insights from data.
+    </p>
+</section>
+
+<section id="skills" class="light">
+    <h3>Skills</h3>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Data Analysis</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="project">
+        <h4>Retail Sales Data Analysis</h4>
+        <p>
+            Conducted EDA, identified sales trends, and built interactive dashboards
+            using Power BI.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="light">
+    <h3>Contact</h3>
+    <p>Email: mitalisabale@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/mitali-sabale</p>
+</section>
+
+<footer>
+    <p>© 2026 Mitali Sabale. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

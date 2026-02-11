@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+form {
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 6px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#strengthBar {
+    height: 8px;
+    width: 0%;
+    background: red;
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#message {
+    font-weight: bold;
+}
